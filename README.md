@@ -384,3 +384,65 @@ The goal of this project is to integrate an Ubuntu Server (`UbuntuServer00`) int
 
 </details>
 
+
+
+
+
+## Objective
+
+The objective of this project is to set up a virtual network environment for analyzing malware traffic using Security Onion, a Windows VM for Open Source Intelligence (OSINT), and various tools like Wireshark, AbuseIPDB, and VirusTotal. This setup aims to provide a realistic SOC (Security Operations Center) experience for malware analysis and network security monitoring. <br><br>
+
+## Components
+
+- **VirtualBox**: Used for creating and managing virtual machines.
+- **Security Onion VM**: A powerful Linux distro for intrusion detection, network security monitoring, and log management.
+- **Windows VM**: Utilized for conducting OSINT and other security-related tasks.
+- **Wireshark**: Network protocol analyzer for network troubleshooting and analysis.
+- **AbuseIPDB**: Online database for reporting and checking IP addresses involved in malicious activities.
+- **VirusTotal**: A service for analyzing suspicious files and URLs for malware.
+- **NAT Network**: Configured in VirtualBox for network simulation.
+- **Malware Traffic Analysis PCAP File**: Used for practical experience in analyzing malicious network traffic.
+
+<details>
+  <summary><h2><b>Section 1: Setting Up the Virtual Environment</b></h2></summary>
+  This section covers the setup of the virtual environment using VirtualBox, including the configuration of a NAT network and the installation of virtual machines.<br><br>
+
+  - **Step 1: Configure VirtualBox NAT Network**:  
+    Creation of a NAT network within VirtualBox to simulate a real network environment.
+  
+  - **Step 2: Install Security Onion VM**:  
+    Downloading and installing Security Onion on a virtual machine within the VirtualBox environment.
+
+  - **Step 3: Install Windows VM**:  
+    Setting up a Windows virtual machine for OSINT and other security tasks.<br><br>
+
+</details>
+
+<details>
+  <summary><h2><b>Section 2: Network Monitoring and Analysis</b></h2></summary>
+  In this section, we dive into the use of Security Onion and Wireshark for monitoring and analyzing network traffic.<br><br>
+
+  - **Step 1: Configuring Security Onion**:  
+    Initial configuration and setup of Security Onion for capturing and analyzing network traffic.
+
+  - **Step 2: Analyzing Traffic with Wireshark**:  
+    Using Wireshark to inspect the PCAP file and understand the nature of the malware traffic.<br><br>
+
+</details>
+
+<details>
+  <summary><h2><b>Section 3: Utilizing OSINT and Online Tools</b></h2></summary>
+  This section focuses on leveraging the Windows VM for OSINT and using online tools like AbuseIPDB and VirusTotal for deepening the analysis.<br><br>
+
+  - **Step 1: OSINT Techniques**:  
+    Employing OSINT methods on the Windows VM to gather additional information about the malware and its origins.
+
+  - **Step 2: Using AbuseIPDB and VirusTotal**:  
+    Utilizing AbuseIPDB to check for reported malicious activities of IPs and VirusTotal for analyzing suspicious files and URLs.<br><br>
+
+</details>
+
+## __Conclusion__
+
+This project successfully demonstrates the creation of a virtual SOC environment using Security Onion, Wireshark, and various OSINT tools. The hands-on experience gained in analyzing malware traffic and employing OSINT techniques provides valuable insights into the world of network security and threat intelligence.
+
