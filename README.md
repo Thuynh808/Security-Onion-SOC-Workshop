@@ -1,9 +1,7 @@
 # Security-Onion-SOC-Workshop
 
 
-# Ubuntu-Active Directory Integration Lab
-
-  ![Image 2](https://i.imgur.com/zZWNfBP.png)
+  ![Image 2](https://i.imgur.com/mObZonw.png)
 <br><br>
 
 ## Objective
