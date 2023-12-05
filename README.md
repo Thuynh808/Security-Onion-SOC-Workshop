@@ -6,23 +6,6 @@
 
 ## Objective
 
-The goal of this project is to integrate an Ubuntu Server (`UbuntuServer00`) into an existing Active Directory environment (`Streetrack.com`). This will enable centralized management of user credentials, enhanced security, and a seamless user experience. <br><br>
-
-## Components
-
-- **VirtualBox**: For creating and running virtual machines
-- **Windows Server 2019 (DC)**: Serves as the Domain Controller for the `Streetrack.com` domain
-- **Ubuntu Server 20.04.3**: To be integrated into the Active Directory environment
-- **SSH**: Secure Shell for remote management of Ubuntu Server
-- **PAM**: Pluggable Authentication Module for Unix/Linux authentication
-- **SSSD**: System Security Services Daemon for AD integration
-- **Kerberos**: For secure authentication between Ubuntu Server and AD
-- **Net-tools**: Network utilities for network troubleshooting and configuration
-
-
-
-## Objective
-
 The objective of this project is to set up a virtual network environment for analyzing malware traffic using Security Onion, a Windows VM for Open Source Intelligence (OSINT), and various tools like Wireshark, AbuseIPDB, and VirusTotal. This setup aims to provide a realistic SOC (Security Operations Center) experience for malware analysis and network security monitoring. <br><br>
 
 ## Components
