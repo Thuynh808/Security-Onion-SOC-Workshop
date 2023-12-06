@@ -86,12 +86,15 @@ The objective of this project is to set up a virtual network environment for ana
 </details>
 
 <details>
-  <summary><h2><b>Section 1: Pre-Installation Checks</b></h2></summary>
-  Before beginning the installation process, we need to perform some preliminary checks to ensure a smooth setup.<br><br>
+  <summary><h2><b>Section 2: Security Onion Initial Setup</b></h2></summary>
+  Lets setup up and configure our Security Onion (NSM) Network Security Monitoring solution<br><br>
 
-  - **Step 1: Validate Domain Controller (DC) Settings**:  
-    Ensure that the Windows Server 2019 Domain Controller is up and running.
-    Validate that DHCP and DNS services are functional on the DC.
+  - **Step 1: Boot up Security Onion VM**:  
+    - Set our Administrator username: streetrack
+    - Set password: *********
+      
+  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+<br><br>
 
   - **Step 2: Confirm Network Interface Card (NIC) Settings**:  
     On `UbuntuServer00`, set the NIC to "Internal Network".
