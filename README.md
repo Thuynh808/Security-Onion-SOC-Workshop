@@ -98,23 +98,23 @@ The objective of this project is to set up a virtual network environment for ana
 
   - **Step 2: Set and choose the following configurations**:  
       
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/TKUtGex.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/ZTWYOSZ.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/cnPWynd.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/IM6XvNY.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/3k3ZteC.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/cMBPrI3.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/qhZ5MSs.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/hdhMJpb.png)
 <br><br>
-  ![Image 2](https://i.imgur.com/lCRnaTj.png)
+  ![Image 2](https://i.imgur.com/ykd87qv.png)
 <br><br>
   ![Image 2](https://i.imgur.com/lCRnaTj.png)
 <br><br>
