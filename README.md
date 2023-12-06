@@ -138,21 +138,41 @@ The objective of this project is to set up a virtual network environment for ana
 <br><br>
   ![Image 2](https://i.imgur.com/0A7CbRk.png)
 <br><br>
+  ![Image 2](https://i.imgur.com/aJMIVel.png)
+<br><br>
   
-
+  Awesome! We've completed the set up our Security Onion Server!<br>
+  In order to access the web interface of Security Onion, we'll use the following:<br>
+    - Website: https://10.2.22.20<br>
+    - Username: streetrack@homelab.com<br>
+    - Password: ***********
 
 </details>
 
 
 <details>
-  <summary><h2><b>Section 2: Network Monitoring and Analysis</b></h2></summary>
-  In this section, we dive into the use of Security Onion and Wireshark for monitoring and analyzing network traffic.<br><br>
+  <summary><h2><b>Section 3: Logging into Security Onion</b></h2></summary>
+  In this section we will go over the steps to log into our SIEM <br><br>
 
-  - **Step 1: Configuring Security Onion**:  
-    Initial configuration and setup of Security Onion for capturing and analyzing network traffic.
+  - **Step 1: Confirm Security Onion Services**:
+    - Within our Security Onion VM, run the following command to see if the services are up and running<br><br>
+      - ```bash
+        sudo so-status
+<br>
+        
+  ![Image 2](https://i.imgur.com/nYKCBlT.png)
+<br><br>
 
-  - **Step 2: Analyzing Traffic with Wireshark**:  
-    Using Wireshark to inspect the PCAP file and understand the nature of the malware traffic.<br><br>
+  - **Step 2: Start The Windows VM and Navigate to Security Onion**:  
+    - Minimize the Security Onion VM
+    - Start the Windows VM
+    - Open Web Browser
+    - Navigate to 10.2.22.20
+    - Click Advanced
+    - Click Proceed to 10.2.22.20<br><br>
+ 
+  ![Image 2](https://i.imgur.com/ko1ARJD.png)
+<br><br>
 
 </details>
 
