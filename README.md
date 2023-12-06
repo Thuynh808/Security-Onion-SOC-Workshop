@@ -253,11 +253,15 @@ The objective of this project is to set up a virtual network environment for ana
 <br><br>
 
   - **Step 6: Import the PCAP into Security Onion**:  
-    - Now, import the pcap file into Security Onion for analysis.
-    - You can use Security Onion's built-in tools for importing pcap files. Follow the tool-specific instructions for importing.
-    <br><br>
+    - Now, we'll import the pcap file into Security Onion for analysis.
+    - The following command will import the pcap:<br><br>
+      - ```bash
+        sudo so-import-pcap 2022-01-07-traffic-analysis-exercise.pcap
+        ```
+    ![Image 2](https://i.imgur.com/C0BuQrR.png)
+<br><br>
 
-  Congratulations! We have successfully downloaded and imported a malicious pcap file into Security Onion. This file will serve as the basis for our network traffic analysis and threat hunting exercises, providing a hands-on experience in identifying and investigating cybersecurity threats.
+  Lets GO! We have successfully downloaded and imported the malicious pcap file into Security Onion. We can see it being analyzed by Suricata and Zeek. This file will serve as the basis for our network traffic analysis and threat hunting exercises, providing a hands-on experience in identifying and investigating cybersecurity threats.
 
 </details>
 
