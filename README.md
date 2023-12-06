@@ -24,16 +24,84 @@ The objective of this project is to set up a virtual network environment for ana
   <summary><h2><b>Section 1: Setting Up the Virtual Environment</b></h2></summary>
   This section covers the setup of the virtual environment using VirtualBox, including the configuration of a NAT network and the installation of virtual machines.<br><br>
 
-  - **Step 1: Configure VirtualBox NAT Network**:  
-    Creation of a NAT network within VirtualBox to simulate a real network environment.
-  
-  - **Step 2: Install Security Onion VM**:  
-    Downloading and installing Security Onion on a virtual machine within the VirtualBox environment.
+  - **Step 1: Download Security Onion ISO File**:  
+    Go to Security Onion's GitHub page and download the ISO file.
 
-  - **Step 3: Install Windows VM**:  
-    Setting up a Windows virtual machine for OSINT and other security tasks.<br><br>
+  ![Image 2](https://i.imgur.com/uookvCd.png)
+<br><br>
+    
+  - **Step 2: Create a New Virtual Machine in VirtualBox**:  
+    Here we will create a new virtual machine in VirtualBox for the Security Onion.<br>
+
+    - Base Memory: About 8 gb<br>
+    - Processors: 3 cores
+    - Hard Disk storage: 200 gb
+
+  ![Image 2](https://i.imgur.com/KQ3TE5g.png)
+<br><br>
+
+    
+
+  ![Image 2](https://i.imgur.com/JZIiCYe.png)
+<br><br>
+
+    
+
+  ![Image 2](https://i.imgur.com/FYk1M4y.png)
+<br><br>
+       
+  - **Step 3: Create a New Windows VM**:  
+    Set up a Windows virtual machine for accessing Security Onion, OSINT, and other security tasks.<br>
+
+    - Base Memory: About 8 gb<br>
+    - Processors: 3 cores<br>
+    - Hard Disk storage: 50 gb<br><br>
+
+  - **Step 4: Create a NAT Network in VirtualBox**:  
+    Here we will create a NAT Network in VirtualBox for our Security Onion and Windows VM<br>
+    - Go to File > Tools > And choose Network Manager
+
+  ![Image 2](https://i.imgur.com/EseCdCy.png)
+<br><br>
+
+  -  
+    - Click on NAT Networks and set the Name and IP subnet: 
+    - Name: NatNetwork
+    - IPv4 Prefix: 10.2.22.0/24
+
+  ![Image 2](https://i.imgur.com/oqxJmkH.png)
+<br><br>
+
+  - **Step 5: Configure Network Settings for Both VMs**:  
+    - Go to each vm and click on Settings > Network > Set the following: <br>
+    - Attached to: NAT Network
+    - Name: NatNetwork
+
+  ![Image 2](https://i.imgur.com/c89c24P.png)
+<br><br>
+
+  Excellent! We've just finished creating our Network and And Virtual Machines for this lab. Next is setting up the Security Onion operating system.
+    
 
 </details>
+
+<details>
+  <summary><h2><b>Section 1: Pre-Installation Checks</b></h2></summary>
+  Before beginning the installation process, we need to perform some preliminary checks to ensure a smooth setup.<br><br>
+
+  - **Step 1: Validate Domain Controller (DC) Settings**:  
+    Ensure that the Windows Server 2019 Domain Controller is up and running.
+    Validate that DHCP and DNS services are functional on the DC.
+
+  - **Step 2: Confirm Network Interface Card (NIC) Settings**:  
+    On `UbuntuServer00`, set the NIC to "Internal Network".
+    Make sure it aligns with the DC's internal network settings.<br><br>
+
+  ![Image 2](https://i.imgur.com/4gJND4G.png)
+<br><br>
+
+</details>
+
 
 <details>
   <summary><h2><b>Section 2: Network Monitoring and Analysis</b></h2></summary>
