@@ -22,6 +22,68 @@ The objective of this project is to set up a virtual network environment for ana
 
 <details>
   <summary><h2><b>Section 1: Setting Up the Virtual Environment</b></h2></summary>
+  This section will guide us through the setup of our virtual environment using VirtualBox. We'll configure a NAT network and install two virtual machines – one for Security Onion and another for a Windows environment to facilitate OSINT and to access the Security Onion web interface. <br><br>
+
+  - **Step 1: Download Security Onion ISO File**:  
+    Begin by downloading the Security Onion ISO file from the official Security Onion GitHub page. This ISO file will be used to install Security Onion on our virtual machine.
+    
+  ![Image 2](https://i.imgur.com/uookvCd.png)
+    <br><br>
+    
+  - **Step 2: Create a New Virtual Machine in VirtualBox for Security Onion**:  
+    Next, we'll set up a new virtual machine in VirtualBox specifically for Security Onion.
+    - Allocate the following resources:
+      - Base Memory: Approximately 8 GB
+      - Processors: 3 cores
+      - Hard Disk Storage: 200 GB
+    
+  ![Image 2](https://i.imgur.com/KQ3TE5g.png)
+    <br><br>
+    
+  ![Image 2](https://i.imgur.com/JZIiCYe.png)
+    <br><br>
+    
+  ![Image 2](https://i.imgur.com/FYk1M4y.png)
+    <br><br>
+       
+  - **Step 3: Create a New Windows VM**:  
+    We also need a Windows virtual machine for OSINT activities and to access the Security Onion web interface.
+    - Allocate the following resources:
+      - Base Memory: Approximately 8 GB
+      - Processors: 3 cores
+      - Hard Disk Storage: 50 GB
+    <br><br>
+
+  - **Step 4: Create a NAT Network in VirtualBox**:  
+    To allow both VMs to communicate with each other and the internet, we’ll create a NAT Network in VirtualBox.
+    - Navigate to 'File' > 'Tools'
+    - Click on 'Network Manager'
+    - Click on NAT Networks and configure with the following settings:
+      - Name: NatNetwork
+      - IPv4 Prefix: 10.2.22.0/24
+
+  ![Image 2](https://i.imgur.com/EseCdCy.png)
+    <br><br>
+    
+  ![Image 2](https://i.imgur.com/oqxJmkH.png)
+    <br><br>
+
+  - **Step 5: Configure Network Settings for Both VMs**:  
+    Finally, assign both VMs to our newly created NAT Network.
+    - For each VM, go to 'Settings' > 'Network'
+    - Under 'Attached to:', select 'NAT Network'
+    - Choose 'NatNetwork' from the dropdown menu
+<br>
+
+  ![Image 2](https://i.imgur.com/c89c24P.png)
+<br><br>
+
+  Great! We've successfully created our virtual network environment and set up the virtual machines necessary for this workshop. This foundational step is critical for our subsequent activities in network security monitoring and analysis with Security Onion.
+
+</details>
+
+<details>
+  <summary><h2><b>Section 1: Setting Up the Virtual Environment</b></h2></summary>
   This section covers the setup of the virtual environment using VirtualBox, including the configuration of a NAT network and the installation of virtual machines.<br><br>
 
   - **Step 1: Download Security Onion ISO File**:  
@@ -141,7 +203,7 @@ The objective of this project is to set up a virtual network environment for ana
   ![Image 2](https://i.imgur.com/aJMIVel.png)
 <br><br>
   
-  Awesome! We've completed the set up our Security Onion Server!<br>
+  Awesome! We've completed the set up of our Security Onion Server!<br>
   In order to access the web interface of Security Onion, we'll use the following:<br>
     - Website: https://10.2.22.20<br>
     - Username: streetrack@homelab.com<br>
