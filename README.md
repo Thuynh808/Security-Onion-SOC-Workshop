@@ -188,6 +188,78 @@ The objective of this project is to set up a virtual network environment for ana
 
 </details>
 
+<details>
+  <summary><h2><b>Section 4: Downloading and Importing Malicious PCAP File</b></h2></summary>
+  In this section, we will focus on acquiring and importing a malicious pcap file into Security Onion. This is a crucial step for practicing network traffic analysis and threat hunting. <br><br>
+
+  - **Step 1: SSH into Security Onion from Windows VM**:  
+    - Start by opening a PowerShell window in the Windows VM.
+    - Use SSH to connect to the Security Onion VM with our username and password
+      - ```bash
+        ssh streetrack@10.2.22.20
+        ```
+        
+  ![Image 2](https://i.imgur.com/4QauvKf.png)
+<br><br>
+
+  - **Step 2: Create a Temporary Folder in Security Onion**:  
+    - Once logged in, we'll run 'ls' to take note of where we're at
+    - Create a temporary directory(temp) where the pcap file will be downloaded.
+    - Navigate into our temp directory
+      - ```bash
+        ls
+        ```
+      - ```bash
+        mkdir temp
+        ```
+      - ```bash
+        cd temp
+        ```
+        
+    ![Image 2](https://i.imgur.com/7BdYAmv.png)
+<br><br>
+
+  - **Step 3: Navigate to Malware-Traffic-Analysis.net on Windows VM**:  
+    - On the Windows VM, open a web browser and go to [Malware-Traffic-Analysis.net](https://www.malware-traffic-analysis.net/).
+    - Under Traffic Analysis Exercises, click on 'Click Here' for Training exercises to analyze pcap files of network traffic
+    - We'll then choose '2022-01-07 Traffic analysis exercise - Spoonwatch'<br>
+    - Right-click on the the pcap link and choose 'Copy Link Address'
+    
+    ![Image 2](https://i.imgur.com/bAA7QG3.png)
+<br><br>
+
+    ![Image 2](https://i.imgur.com/ZBBzY5o.png)
+<br><br>
+
+    ![Image 2](https://i.imgur.com/cODFyaz.png)
+<br><br>
+    
+  - **Step 4: Download the PCAP File Using Wget in PowerShell**:
+    - Switch back to the PowerShell SSH session connected to Security Onion.
+    - Use the `wget` command and paste the copied link address to download the file<br><br>
+      - ```bash
+        wget https://www.malware-traffic-analysis.net/2022/01/07/2022-01-07-traffic-analysis-exercise.pcap.zip
+        ```
+    ![Image 2](https://i.imgur.com/BSsooKQ.png)
+<br><br>
+    
+  - **Step 5: Unzip the PCAP File**:  
+    - Use the following command to unzip the pcap file:
+      - ```bash
+        unzip 2022-01-07-traffic-analysis-exercise.pcap.zip
+        ```
+    <br><br>
+
+  - **Step 6: Import the PCAP into Security Onion**:  
+    - Now, import the pcap file into Security Onion for analysis.
+    - You can use Security Onion's built-in tools for importing pcap files. Follow the tool-specific instructions for importing.
+    <br><br>
+
+  Congratulations! We have successfully downloaded and imported a malicious pcap file into Security Onion. This file will serve as the basis for our network traffic analysis and threat hunting exercises, providing a hands-on experience in identifying and investigating cybersecurity threats.
+
+</details>
+
+
 
 
 ## __Conclusion__
