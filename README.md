@@ -194,7 +194,7 @@ The objective of this project is to set up a virtual network environment for ana
 
   - **Step 1: SSH into Security Onion from Windows VM**:  
     - Start by opening a PowerShell window in the Windows VM.
-    - Use SSH to connect to the Security Onion VM with our username and password
+    - Use SSH to connect to the Security Onion VM with our username and password<br><br>
       - ```bash
         ssh streetrack@10.2.22.20
         ```
@@ -205,7 +205,7 @@ The objective of this project is to set up a virtual network environment for ana
   - **Step 2: Create a Temporary Folder in Security Onion**:  
     - Once logged in, we'll run 'ls' to take note of where we're at
     - Create a temporary directory(temp) where the pcap file will be downloaded.
-    - Navigate into our temp directory
+    - Navigate into our temp directory<br><br>
       - ```bash
         ls
         ```
@@ -243,12 +243,14 @@ The objective of this project is to set up a virtual network environment for ana
     ![Image 2](https://i.imgur.com/BSsooKQ.png)
 <br><br>
     
-  - **Step 5: Unzip the PCAP File**:  
-    - Use the following command to unzip the pcap file:
+  - **Step 5: Unzip the PCAP File**:
+    - The zipped pcap file requires a password to unzip. The password is: infected
+    - Use the following command to unzip the pcap file:<br><br>
       - ```bash
         unzip 2022-01-07-traffic-analysis-exercise.pcap.zip
         ```
-    <br><br>
+    ![Image 2](https://i.imgur.com/ME0M40y.png)
+<br><br>
 
   - **Step 6: Import the PCAP into Security Onion**:  
     - Now, import the pcap file into Security Onion for analysis.
