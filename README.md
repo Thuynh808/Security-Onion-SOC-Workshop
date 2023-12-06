@@ -287,21 +287,23 @@ The objective of this project is to set up a virtual network environment for ana
       - Locate the blue icon on the left of the alert
       - Click and Escalate to a new case
     
-    ![Image 2](https://i.imgur.com/lwiBWwt.png)
+    ![Image 3](https://i.imgur.com/lwiBWwt.png)
 <br><br>
     ![Image 3](https://i.imgur.com/LiYonOG.png)
 <br><br>
 
   - **Step 3: Assign and Update Case Status**:  
-    - Once the case has been created, assign it to yourself.
+    - Once the case has been created, we'll assign it to our account
+      - Click on the binoculars icon
+      - Choose Assignee<br><br>
     - Update the case status to 'In Progress' to reflect that an investigation is underway.
+    
     ![Image 2](https://i.imgur.com/Vu1E5zI.png)
-    ![Image 3](https://i.imgur.com/ndetr8K.png)
 <br><br>
     ![Image 3](https://i.imgur.com/jtOip0E.png)
 <br><br>
 
-  Well done! You've now created and assigned a case based on the alerts triggered by the pcap analysis. This is a critical step in the incident response process where you begin to dive deeper into the data, examining the details of the traffic and understanding the context of the alerts.
+  Great! We've now created and assigned a case based on the alerts triggered by the pcap analysis. This is a critical step in the incident response process where we begin to dive deeper into the data, examining the details of the traffic and understanding the context of the alerts. Next up, THE HUNT!
 
 </details>
 
