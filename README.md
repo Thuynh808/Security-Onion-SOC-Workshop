@@ -267,25 +267,22 @@ The objective of this project is to set up a virtual network environment for ana
 
 <details>
   <summary><h2><b>Section 5: Creating a Case from Alerts</b></h2></summary>
-  After importing the pcap file into Security Onion, it's time to analyze the alerts generated and escalate them into a case. This section will guide us through adjusting the date and time filters to locate the relevant events, escalating an alert, and assigning the case for further investigation. <br><br>
+  This crucial phase follows the pcap import into Security Onion, where we analyze generated alerts to identify potential threats. The goal is to escalate noteworthy alerts into cases for a detailed investigation. This section walks through fine-tuning the date and time settings to isolate the events within our pcap timeframe and how to create cases for our investigation. <br><br>
 
   - **Step 1: Adjust Date and Time Filters**:  
-    - Navigate to the Dashboards or Alerts page in Security Onion.
-    - Adjust the date and time filters to match the time frame of the pcap data to ensure all relevant events are visible
-    - We'll use the whole month of January 2022
+    - On the Security Onion Dashboard or Alerts page, locate the time filter usually found at the top right corner.
+    - We'll set the filter to encompass the entire month of January 2022, ensuring that all events from our pcap are included in the view. This step is critical as it frames our analysis within the correct scope.
       
     ![Image 2](https://i.imgur.com/063F51n.png)
 <br><br>
 
   - **Step 2: Review and Escalate Alerts**:  
-    - As we review the alerts that correspond to the events in the pcap file, we can see the following:
-      - Count (number of times the alert has been flagged)
-      - Rule.Name (the alert rule that has been triggered)
-      - Event.Module (the module that flagged the alert, in this case, Siricata)
-      - Severity (how much impact the alert has)<br><br>
-    - We'll choose the first one which has the highest count and severity level for further investigation and escalate it to a new case.
-      - Locate the blue icon on the left of the alert
-      - Click and Escalate to a new case
+    - Here we'll examine the list of alerts, paying special attention to the following attributes:
+      - **Count**: The frequency of the alert occurrence.
+      - **Rule Name**: Which rule was triggered to raise the alert.
+      - **Event Module**: The module (such as Suricata) that detected the alert.
+      - **Severity**: The potential impact of the alert, indicating urgency.<br><br>
+    - For this exercise, we’ll focus on the most prominent alert, indicated by the highest count and severity. To escalate, click the blue icon to the left of the alert and select 'Escalate to new case'
     
     ![Image 3](https://i.imgur.com/lwiBWwt.png)
 <br><br>
@@ -293,17 +290,15 @@ The objective of this project is to set up a virtual network environment for ana
 <br><br>
 
   - **Step 3: Assign and Update Case Status**:  
-    - Once the case has been created, we'll assign it to our account
-      - Click on the binoculars icon
-      - Choose Assignee<br><br>
-    - Update the case status to 'In Progress' to reflect that an investigation is underway.
+    - With the case created, it's time to take ownership. Click on the binoculars icon to open the case, then select our username from the 'Assignee' dropdown
+    - Set the case status to 'In Progress'. This label signals that we have begun investigating the case, a proactive step in the incident response workflow
     
     ![Image 2](https://i.imgur.com/Vu1E5zI.png)
 <br><br>
     ![Image 3](https://i.imgur.com/jtOip0E.png)
 <br><br>
 
-  Great! We've now created and assigned a case based on the alerts triggered by the pcap analysis. This is a critical step in the incident response process where we begin to dive deeper into the data, examining the details of the traffic and understanding the context of the alerts. Next up, THE HUNT!
+  Excellent! We have successfully identified a critical alert and initiated a case for it. Documenting and assigning the case is pivotal, as it formalizes our response to the incident. Next, we'll embark on "THE HUNT," where we'll analyze the case details, searching for the tell-tale signs of a cybersecurity threat and piecing together the narrative of the attack.
 
 </details>
 
