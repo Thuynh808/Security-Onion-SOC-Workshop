@@ -149,32 +149,48 @@ The objective of this project is to set up a virtual network environment for ana
 
 </details>
 
-
 <details>
   <summary><h2><b>Section 3: Logging into Security Onion</b></h2></summary>
-  In this section we will go over the steps to log into our SIEM <br><br>
+  In this section, we will go over the steps to log into our SIEM, Security Onion. This process is crucial for accessing the powerful suite of tools that Security Onion provides for network security monitoring and analysis. <br><br>
 
   - **Step 1: Confirm Security Onion Services**:
-    - Within our Security Onion VM, run the following command to see if the services are up and running<br><br>
+    - Within our Security Onion VM, it’s important to first ensure that all necessary services are operational. Run the following command to see if the services are up and running. This step confirms that the system is ready for use.<br><br>
       - ```bash
         sudo so-status
+        ```
 <br>
-        
+ 
   ![Image 2](https://i.imgur.com/nYKCBlT.png)
 <br><br>
 
   - **Step 2: Start The Windows VM and Navigate to Security Onion**:  
-    - Minimize the Security Onion VM
-    - Start the Windows VM
-    - Open Web Browser
-    - Navigate to 10.2.22.20
-    - Click Advanced
-    - Click Proceed to 10.2.22.20<br><br>
- 
+    - Once we've confirmed that the services in the Security Onion VM are active, proceed to the Windows VM. This VM will be used to access the Security Onion web interface.
+    - Start by minimizing the Security Onion VM.
+    - Boot up the Windows VM.
+    - Open a web browser on the Windows VM and navigate to the Security Onion's IP address (in this case, 10.2.22.20).
+    - Click on 'Advanced' if prompted by the browser, and then 'Proceed to 10.2.22.20' to bypass any security warnings. These warnings are typical when accessing local network services.
+    <br><br>
+  
   ![Image 2](https://i.imgur.com/ko1ARJD.png)
 <br><br>
 
+  - **Step 3: Log In to Security Onion**:  
+    - Upon reaching the Security Onion login page, enter the credentials we have previously set up. It’s crucial to remember these credentials as they provide access to our SOC's central monitoring system.
+      - Username: streetrack@homelab.com
+      - Password: **********
+    - Successfully logging in will grant us access to the dashboard and various tools provided by Security Onion, marking the beginning of our security monitoring activities.
+    <br><br>
+  
+  ![Image 2](https://i.imgur.com/BkDzo42.png)
+<br><br>
+  
+  ![Image 2](https://i.imgur.com/SIPNXLH.png)
+<br><br>
+
+  Congratulations! We have successfully logged into Security Onion. This is a significant step in starting our journey into network security monitoring and analysis. The Security Onion interface is where we will spend most of our time analyzing network traffic, investigating alerts, and honing our cybersecurity skills. 
+
 </details>
+
 
 <details>
   <summary><h2><b>Section 3: Utilizing OSINT and Online Tools</b></h2></summary>
