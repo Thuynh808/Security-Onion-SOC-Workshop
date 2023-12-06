@@ -189,17 +189,6 @@ The objective of this project is to set up a virtual network environment for ana
 </details>
 
 
-<details>
-  <summary><h2><b>Section 3: Utilizing OSINT and Online Tools</b></h2></summary>
-  This section focuses on leveraging the Windows VM for OSINT and using online tools like AbuseIPDB and VirusTotal for deepening the analysis.<br><br>
-
-  - **Step 1: OSINT Techniques**:  
-    Employing OSINT methods on the Windows VM to gather additional information about the malware and its origins.
-
-  - **Step 2: Using AbuseIPDB and VirusTotal**:  
-    Utilizing AbuseIPDB to check for reported malicious activities of IPs and VirusTotal for analyzing suspicious files and URLs.<br><br>
-
-</details>
 
 ## __Conclusion__
 
@@ -207,66 +196,6 @@ This project successfully demonstrates the creation of a virtual SOC environment
 
 </details>
 
-<details>
-  <summary><h2><b>Section 1: Pre-Installation Checks</b></h2></summary>
-  Before beginning the installation process, we need to perform some preliminary checks to ensure a smooth setup.<br><br>
 
-  - **Step 1: Validate Domain Controller (DC) Settings**:  
-    Ensure that the Windows Server 2019 Domain Controller is up and running.
-    Validate that DHCP and DNS services are functional on the DC.
-
-  - **Step 2: Confirm Network Interface Card (NIC) Settings**:  
-    On `UbuntuServer00`, set the NIC to "Internal Network".
-    Make sure it aligns with the DC's internal network settings.<br><br>
-
-  ![Image 2](https://i.imgur.com/4gJND4G.png)
-<br><br>
-
-</details>
-
-<details>
-  <summary><h2><b>Section 2: Installing UbuntuServer00</b></h2></summary>
-  In this section, we will go through the installation process for Ubuntu Server and prepare it for integration with the Active Directory environment.<br><br>
-  
-  - **Step 1: Begin Installations**:  
-    Boot up the `UbuntuServer00` VM from the ISO images and start the installation process.<br><br>
-
-  ![Image 2](https://i.imgur.com/7QGI7d9.png)
-<br><br>
-
-  - **Step 2: Network Connections**:  
-    During the installation, reach the "Network Connections" section.
-    Ensure that we are provided an IP within the range of the DC, which is between `10.2.22.100-200`.
-    In this example, we were allocated the IP `10.2.22.104`.<br><br>
-
-  ![Image 2](https://i.imgur.com/2woJCXg.png)
-<br><br>
-  
-  - **Step 3: Profile Setup**:  
-    Here we will setup our profile:
-      - Your name: Thong Huynh
-      - Your server's name: ubuntuserver00
-      - Pick a username: thuynh808
-      - Password: ************<br><br>
-
-  ![Image 2](https://i.imgur.com/xZXu4zn.png)
-<br><br>
-
-  - **Step 3: SSH Setup**:  
-    Proceed to the SSH setup and select "Install OpenSSH server".<br><br>
-
-  ![Image 2](https://i.imgur.com/PqhsFd1.png)
-<br><br>
-
-  - **Step 4: Complete Installation and Login**:  
-    Once the installation is completed, select "Reboot Now".
-    After the system reboots, press Enter, and the login prompt will appear.<br><br>
-
-  ![Image 2](https://i.imgur.com/PSbLdjt.png)
-<br><br>
-
-  Awesome! We've successfully installed UbuntuServer00!
-
-</details>
 
 
