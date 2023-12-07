@@ -380,14 +380,14 @@ The objective of this project is to set up a virtual network environment for ana
     ![Image 5](https://i.imgur.com/IC7aXzE.png)
 <br><br>
 
-  - **Analyzing Alert Details**:<br><br>
+  - **Analyzing Alert Details**:<br>
     - Now if we click and expand on the file download alert, we can gather more information including `timestamp`, `source.ip`, `destination.ip`, and `destination.port`, providing context for when and how the communication occurred.<br><br>
     - The event is categorized under `network`, with the `event.dataset` of `suricata.alert`, indicating that this transaction was flagged by our IDS/IPS, Suricata, highlighting the need for closer inspection of the data payload.
 
     ![Image 5](https://i.imgur.com/2BNYu69.png)
 <br><br>
 
-  - **Payload Analysis**:<br><br>
+  - **Payload Analysis**:<br>
     - Scrolling down, we can see that in the network data, the file has a `content-type` of an `image/jpeg` but the file header starts with `MZ` which is associated with executables in the Windows enviroment. This is a red flag because adversaries tend to disguise malicious files to pass as harmless ones. This information adds to our case as we investigate further.
   
     ![Image 7](https://i.imgur.com/Hi5UbKH.png)
