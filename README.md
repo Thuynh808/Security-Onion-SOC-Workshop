@@ -304,48 +304,57 @@ The objective of this project is to set up a virtual network environment for ana
 
 <details>
   <summary><h2><b>Section 6: The Hunt</b></h2></summary>
+
+  <details>
+  <summary><h3><b>Subsection 6.1: Initiating The Hunt</b></h3></summary>
   
-  <h3><b>Subsection 6.1: Initiating The Hunt</b></h3>
-  
-  - **Reviewing Open Cases**:
-    We start by examining the cases that have been escalated from alerts. These cases represent areas in our network that have been flagged for potential security threats.
+  - **Starting The Hunt**:
+    - To initiate the hunt, we navigate to the 'Cases' section within Security Onion to review the incidents.
+    - We'll select the 'MALWARE Oski Stealer HTTP POST Pattern' alert and choose the 'Hunt' option. This action allows us to explore further details about the triggered rule and the events associated with it, setting the stage for a deeper investigation.
     
     ![Image 3](https://i.imgur.com/QtEUyBG.png)
 <br><br>
   
-  - **Analyzing Case Details**:
-    For each case, we dive into the details, looking at the severity, the frequency of alerts, and the specific nature of each incident.
-    
+  - **Observing IP Addresses**:
+    - Upon reviewing the detailed events, we take note of the IP addresses associated with the alert. In this case, the local IP `192.168.1.216` has made an HTTP POST request to the external IP `2.56.57.108`. This signifies outbound communication from our network to a potential external threat actor, which requires further examination.
+   
     ![Image 3](https://i.imgur.com/jh879C6.png)
 <br><br>
+
+  - **IP Reputation Check with AbuseIPDB**:
+    - A crucial step in threat hunting is to assess the reputation of the external IP addresses involved. A visit to AbuseIPDB reveals past reports of malicious activities associated with `2.56.57.108`<br><br>
+    - We can see that the IP has been listed for various categories of abuse including SMTP brute-force attempts and email spam. This information suggests a pattern of negative behavior associated with the IP.
   
-  - **Using OSINT for IP Reputation**:
-    Part of the hunt involves assessing the reputation of the IPs involved. We use AbuseIPDB to check if the IP addresses have been previously reported for malicious activity.
-    
     ![Image 3](https://i.imgur.com/Gpzi8tS.png)
 <br><br>
-  
-  - **Searching for Indicators of Compromise**:
-    Tools like VirusTotal are invaluable in this phase. We search for any files, domains, or IPs associated with our case to find indicators of compromise.
+
+  - **VirusTotal Search**:
+    - Next, we'll query VirusTotal for any records related to `2.56.57.108`. This check can show if the IP has been flagged for malicious activities, linking it to known malware campaigns or other suspicious actions.
     
     ![Image 3](https://i.imgur.com/84FM12R.png)
 <br><br>
-  
-  - **Gathering Detailed Threat Intelligence**:
-    Upon identifying suspicious IPs, we use VirusTotal to gather detailed threat intelligence, looking at the security vendors' analysis and any related information.
-    
+
+  - **VirusTotal Detection Details**:
+    - The details from VirusTotal offer a deeper look at what specific threats the IP has been associated with. This section often lists detections by various security vendors, confirming the IP's involvement in malicious activities.<br><br>
+    - The external IP `2.56.57.108` checked on VirusTotal is marked as malicious by multiple security vendors. This underlines the threat it poses, confirming suspicions from our Security Onion alerts.
+
     ![Image 3](https://i.imgur.com/i3nQqWa.png)
 <br><br>
+
+  - **VirusTotal Details Analysis**:
+    - When we click on the Details section of the report we can see other information associated with the IP<br><br>
+    - Now scroll down and we notice that the IP `2.56.57.108` has been reported in the MalwareBazaar Database along with other threat intelligence feeds
   
-  - **Documenting Evidence**:
-    All findings from these tools should be documented as they provide evidence that supports our investigation and helps build a comprehensive understanding of the threat landscape.
+    ![Image 3](https://i.imgur.com/xZQX678.png)
+<br><br>
+
+    ![Image 3](https://i.imgur.com/mV6SHn9.png)
+<br><br>
+  
+  In this section, we looked into the suspicious IP `2.56.57.108` from our alert. Tools like AbuseIPDB told us this IP was used for brute-force attacks and email spam. VirusTotal also showed us this IP is a known source of malware.  This information sets a foundation for deeper analysis, as we now have evidence linking this IP to potential security threats.
+  
+  </details>
     
-    ![Image 3](https://i.imgur.com/xZQX678.png)
-<br><br>
-
-    ![Image 3](https://i.imgur.com/xZQX678.png)
-<br><br>
-
 </details>
 
 
