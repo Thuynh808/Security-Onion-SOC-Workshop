@@ -380,45 +380,27 @@ The objective of this project is to set up a virtual network environment for ana
   ![Image 5](https://i.imgur.com/IC7aXzE.png)
 <br><br>
 
-  - **Analyzing Alert Details**:
-    - Now if we click and expand on the file download alert, we can gather more information including `timestamp`, `source.ip`, `destination.ip`, and `destination.port`, providing context for when and how the communication occurred.
+  - **Analyzing Alert Details**:<br><br>
+    - Now if we click and expand on the file download alert, we can gather more information including `timestamp`, `source.ip`, `destination.ip`, and `destination.port`, providing context for when and how the communication occurred.<br><br>
     - The event is categorized under `network`, with the `event.dataset` of `suricata.alert`, indicating that this transaction was flagged by our IDS/IPS, Suricata, highlighting the need for closer inspection of the data payload.
 
    ![Image 5](https://i.imgur.com/2BNYu69.png)
 <br><br>
 
-  - **Payload Analysis**:
+  - **Payload Analysis**:<br><br>
     - Now lets scroll down and we can see that in the network data, the file has a `content-type` of an `image/jpeg` but the file header starts with `MZ` which is associated with executables in the Windows enviroment. This is a red flag because adversaries tend to disguise malicious files to pass as harmless ones. This information adds to our case as we investigate further.
   
   ![Image 7](https://i.imgur.com/Hi5UbKH.png)
 <br><br>
 
-This subsection underscores the importance of examining the content and context of network communications. Understanding what was transmitted helps us to identify potential data leakage or unauthorized data receipt, both of which are critical in incident response and threat hunting.
+  - **Suspicious File Transfer**:
+    - Now lets scroll down and we can detect an alert for a zipped file named 'Chrome_Default.txt' being sent from the local IP to the external IP
+    - The use of compressed files like ZIP is often a strategy used by attackers to evade detection and facilitate the unauthorized transfer of data, known as data exfiltration
+    - Given the previous suspicious activities associated with the external IP, this transfer raises concerns that sensitive data may be compromised or stolen
 
-
-  
-    ![Image 6](https://i.imgur.com/yourimage3.png)
+    ![Image 6](https://i.imgur.com/zCxWq18.png)
 <br><br>
 
-  - **Contextualizing with Historical Data**:
-    - We then contextualize the event with historical data to gauge if this is a part of an ongoing campaign or an isolated incident.
-  
-    ![Image 7](https://i.imgur.com/yourimage4.png)
-<br><br>
-
-- **File and Object Scrutiny**:
-  - Any files or objects associated with the events are scrutinized for malicious content or behavior.
-  
-  ![Image 8](https://i.imgur.com/yourimage5.png)
-<br><br>
-
-  - **Comparing Against Threat Intelligence**:
-    - Lastly, we compare the findings against threat intelligence databases to see if the indicators match any known threat actor profiles or malware signatures.
-  
-    ![Image 9](https://i.imgur.com/yourimage6.png)
-<br><br>
-
-  This subsection provided a focused analysis of events related to the suspicious IP, enriching our understanding of the potential threat through correlation, pattern analysis, and comparison with known intelligence. The goal is to piece together the actions behind the alerts to form a clear narrative of the attack.
 
 </details>
 
