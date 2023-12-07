@@ -394,7 +394,7 @@ The objective of this project is to set up a virtual network environment for ana
 <br><br>
 
   - **Suspicious File Transfer**:
-    - Scroll down further and we can detect an alert for a zipped file named 'Chrome_Default.txt' being sent from the local IP to the external IP<br><br>
+    - Scroll down further and we can see an alert for a zipped file named 'Chrome_Default.txt' being sent from the local IP to the external IP<br><br>
     - The use of compressed files like ZIP is often a strategy used by attackers to evade detection and facilitate the unauthorized transfer of data, known as data exfiltration<br><br>
     - Given the previous suspicious activities associated with the external IP, this transfer raises concerns that sensitive data may be compromised or stolen
 
