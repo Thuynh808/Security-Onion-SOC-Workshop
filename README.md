@@ -303,7 +303,7 @@ The objective of this project is to set up a virtual network environment for ana
 </details>
 
 <details>
-  <summary><h2><b>Section 6: The Hunt</b></h2></summary>
+  <summary><h2><b>Section 6: The HUNT</b></h2></summary>
 
   <details>
   <summary><h3><b>Subsection 6.1: Initiating The Hunt</b></h3></summary>
