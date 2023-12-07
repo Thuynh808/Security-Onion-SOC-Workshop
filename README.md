@@ -354,6 +354,74 @@ The objective of this project is to set up a virtual network environment for ana
   In this section, we looked into the suspicious IP `2.56.57.108` from our alert. Tools like AbuseIPDB told us this IP was used for brute-force attacks and email spam. VirusTotal also showed us this IP is a known source of malware.  This information sets a foundation for deeper analysis, as we now have evidence linking this IP to potential security threats.
   
   </details>
+
+  <details>
+  <summary><h3><b>Subsection 6.2: Deep Dive into Event Correlation</b></h3></summary>
+
+  - **Event Correlation**:
+    - We start by correlating the suspicious IP with other events captured in our logs to identify related activities.
+    - This step is crucial for establishing a timeline and understanding the scope of the potential threat.
+    - If we scroll to the right of the HTTP POST pattern alert, we'll see the `Network Community ID`
+    - This ID will gather data from both Zeek and Siricata and put together a timeline of events that were triggered and are associated with this alert
+    - We can click on the Network Community ID and choose Only to see all alerts with this ID
+
+    ![Image 4](https://i.imgur.com/0b6OqK8.png)
+<br><br>
+
+    ![Image 4](https://i.imgur.com/FfrMqtF.png)
+<br><br>
+
+  - **Analyzing Communication Patterns**:
+    - Next, we analyze the communication patterns between the internal and the suspicious external IP to see if there is any irregularity in the connections
+    - Patterns could indicate command and control (C2) communication, data exfiltration, or other malicious activities.
+    - We notice that after our local host made the POST request, there's another alert `EXE or DLL Windows file download HTTP`which indicate a download of a possible executable file
+    - After that, a `Dotted Quad host MZ response` alert was triggered. This supports the previous alert because the MZ file header is associated with .EXE files
+
+  ![Image 5](https://i.imgur.com/IC7aXzE.png)
+<br><br>
+
+  - **Analyzing Alert Details**:
+    - Now if we click and expand on the file download alert, we can gather more information including `timestamp`, `source.ip`, `destination.ip`, and `destination.port`, providing context for when and how the communication occurred.
+  - The event is categorized under `network`, with the `event.dataset` of `suricata.alert`, indicating that this transaction was flagged by our IDS/IPS, Suricata, highlighting the need for closer inspection of the data payload.
+
+   ![Image 5](https://i.imgur.com/2BNYu69.png)
+<br><br>
+
+  - **Payload Analysis**:
+    - Now lets scroll down and we can see that in the network data, the file has a content-type of an image/jpeg but the file header starts with MZ which associated with executables in the Windows enviroment. This is a red flag because adversaries tend to disguise malicious files to pass as harmless ones. This information adds to our suspicion as we investigate further.
+  
+  ![Image 7](https://i.imgur.com/Hi5UbKH.png)
+<br><br>
+
+This subsection underscores the importance of examining the content and context of network communications. Understanding what was transmitted helps us to identify potential data leakage or unauthorized data receipt, both of which are critical in incident response and threat hunting.
+
+
+  
+    ![Image 6](https://i.imgur.com/yourimage3.png)
+<br><br>
+
+  - **Contextualizing with Historical Data**:
+    - We then contextualize the event with historical data to gauge if this is a part of an ongoing campaign or an isolated incident.
+  
+    ![Image 7](https://i.imgur.com/yourimage4.png)
+<br><br>
+
+- **File and Object Scrutiny**:
+  - Any files or objects associated with the events are scrutinized for malicious content or behavior.
+  
+  ![Image 8](https://i.imgur.com/yourimage5.png)
+<br><br>
+
+  - **Comparing Against Threat Intelligence**:
+    - Lastly, we compare the findings against threat intelligence databases to see if the indicators match any known threat actor profiles or malware signatures.
+  
+    ![Image 9](https://i.imgur.com/yourimage6.png)
+<br><br>
+
+  This subsection provided a focused analysis of events related to the suspicious IP, enriching our understanding of the potential threat through correlation, pattern analysis, and comparison with known intelligence. The goal is to piece together the actions behind the alerts to form a clear narrative of the attack.
+
+</details>
+
     
 </details>
 
