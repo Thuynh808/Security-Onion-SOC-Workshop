@@ -302,6 +302,53 @@ The objective of this project is to set up a virtual network environment for ana
 
 </details>
 
+<details>
+  <summary><h2><b>Section 6: The Hunt</b></h2></summary>
+  
+  <h3><b>Subsection 6.1: Initiating The Hunt</b></h3>
+  
+  - **Reviewing Open Cases**:
+    We start by examining the cases that have been escalated from alerts. These cases represent areas in our network that have been flagged for potential security threats.
+    
+    ![Image 3](https://i.imgur.com/QtEUyBG.png)
+<br><br>
+  
+  - **Analyzing Case Details**:
+    For each case, we dive into the details, looking at the severity, the frequency of alerts, and the specific nature of each incident.
+    
+    ![Image 3](https://i.imgur.com/jh879C6.png)
+<br><br>
+  
+  - **Using OSINT for IP Reputation**:
+    Part of the hunt involves assessing the reputation of the IPs involved. We use AbuseIPDB to check if the IP addresses have been previously reported for malicious activity.
+    
+    ![Image 3](https://i.imgur.com/Gpzi8tS.png)
+<br><br>
+  
+  - **Searching for Indicators of Compromise**:
+    Tools like VirusTotal are invaluable in this phase. We search for any files, domains, or IPs associated with our case to find indicators of compromise.
+    
+    ![Image 3](https://i.imgur.com/84FM12R.png)
+<br><br>
+  
+  - **Gathering Detailed Threat Intelligence**:
+    Upon identifying suspicious IPs, we use VirusTotal to gather detailed threat intelligence, looking at the security vendors' analysis and any related information.
+    
+    ![Image 3](https://i.imgur.com/i3nQqWa.png)
+<br><br>
+  
+  - **Documenting Evidence**:
+    All findings from these tools should be documented as they provide evidence that supports our investigation and helps build a comprehensive understanding of the threat landscape.
+    
+    ![Image 3](https://i.imgur.com/xZQX678.png)
+<br><br>
+
+    ![Image 3](https://i.imgur.com/xZQX678.png)
+<br><br>
+
+</details>
+
+
 
 
 
