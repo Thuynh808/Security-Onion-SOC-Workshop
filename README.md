@@ -363,7 +363,7 @@ The objective of this project is to set up a virtual network environment for ana
     - This step is crucial for establishing a timeline and understanding the scope of the potential threat.
     - If we scroll to the right of the HTTP POST pattern alert, we'll see the `Network Community ID`
     - This ID will gather data from both Zeek and Siricata and put together a timeline of events that were triggered and are associated with this alert
-    - We can click on the Network Community ID and choose Only to see all alerts with this ID
+    - We can click on the Network Community ID and choose Only to see all alerts with this particular ID
 
     ![Image 4](https://i.imgur.com/0b6OqK8.png)
 <br><br>
@@ -377,32 +377,33 @@ The objective of this project is to set up a virtual network environment for ana
     - We notice that after our local host made the POST request, there's another alert `EXE or DLL Windows file download HTTP`which indicate a download of a possible executable file
     - After that, a `Dotted Quad host MZ response` alert was triggered. This supports the previous alert because the MZ file header is associated with .EXE files
 
-  ![Image 5](https://i.imgur.com/IC7aXzE.png)
+    ![Image 5](https://i.imgur.com/IC7aXzE.png)
 <br><br>
 
   - **Analyzing Alert Details**:<br><br>
     - Now if we click and expand on the file download alert, we can gather more information including `timestamp`, `source.ip`, `destination.ip`, and `destination.port`, providing context for when and how the communication occurred.<br><br>
     - The event is categorized under `network`, with the `event.dataset` of `suricata.alert`, indicating that this transaction was flagged by our IDS/IPS, Suricata, highlighting the need for closer inspection of the data payload.
 
-   ![Image 5](https://i.imgur.com/2BNYu69.png)
+    ![Image 5](https://i.imgur.com/2BNYu69.png)
 <br><br>
 
   - **Payload Analysis**:<br><br>
-    - Now lets scroll down and we can see that in the network data, the file has a `content-type` of an `image/jpeg` but the file header starts with `MZ` which is associated with executables in the Windows enviroment. This is a red flag because adversaries tend to disguise malicious files to pass as harmless ones. This information adds to our case as we investigate further.
+    - Scrolling down, we can see that in the network data, the file has a `content-type` of an `image/jpeg` but the file header starts with `MZ` which is associated with executables in the Windows enviroment. This is a red flag because adversaries tend to disguise malicious files to pass as harmless ones. This information adds to our case as we investigate further.
   
-  ![Image 7](https://i.imgur.com/Hi5UbKH.png)
+    ![Image 7](https://i.imgur.com/Hi5UbKH.png)
 <br><br>
 
   - **Suspicious File Transfer**:
-    - Now lets scroll down and we can detect an alert for a zipped file named 'Chrome_Default.txt' being sent from the local IP to the external IP
-    - The use of compressed files like ZIP is often a strategy used by attackers to evade detection and facilitate the unauthorized transfer of data, known as data exfiltration
+    - Scroll down further and we can detect an alert for a zipped file named 'Chrome_Default.txt' being sent from the local IP to the external IP<br><br>
+    - The use of compressed files like ZIP is often a strategy used by attackers to evade detection and facilitate the unauthorized transfer of data, known as data exfiltration<br><br>
     - Given the previous suspicious activities associated with the external IP, this transfer raises concerns that sensitive data may be compromised or stolen
 
     ![Image 6](https://i.imgur.com/zCxWq18.png)
 <br><br>
 
+  In Subsection 6.2, our investigation revealed a pattern of unusual network behavior, including the download of files that looked suspicious and an alert for a zipped file being sent to an external IP. This kind of activity often points to cyber threats like malware attacks or data theft. A file that seemed to be an image but was actually an executable file stood out as a red flag. The evidence suggested that our network might be at risk, emphasizing the importance of prompt action to check for any damage or data loss.
 
-</details>
+  </details>
 
     
 </details>
