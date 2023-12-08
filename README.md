@@ -490,7 +490,7 @@ By correlating timestamps, IP addresses, hostnames, and user accounts from Zeek 
   <details>
   <summary><h3><b>Subsection 7.1: Crafting the Incident Report</b></h3></summary>
 
-  Let's use the following guideline to create our report:<br><br>
+  Let's use the following guideline to create our report:<br>
   
   - **Introduction to the Incident**: Outline the incident, including a brief description of the discovered threat.
   - **Detailed Analysis**: Present the detailed findings from the investigation, including timelines, affected systems, and nature of the threat.
@@ -524,12 +524,42 @@ Data Security: This incident raises significant concerns about the theft of pass
 
   <details>
   <summary><h3><b>Subsection 7.2: Mitigation Recommendations</b></h3></summary>
+
+  We'll use the following guideline to put together our mitigation recommendations:<br>
   
-  - **Immediate Response Measures**: Outline the immediate steps taken to contain and control the incident.
-  - **Long-Term Strategies**: Suggest long-term strategies to prevent similar incidents, including technology upgrades, policy changes, and training initiatives.
-  - **Lessons Learned**: Discuss key takeaways and lessons learned from the incident to improve future cybersecurity practices.
+  - **Immediate Response Measures**: Outline the immediate steps taken to contain and control the incident
+  - **Long-Term Strategies**: Suggest long-term strategies to prevent similar incidents, including technology upgrades, policy changes, and training
+  - **Lessons Learned**: Discuss key takeaways and lessons learned from the incident to improve future cybersecurity practices<br><br><br>
+
+
   
-  [Further content]
+***Cybersecurity Incident Report*** (continued...)<br><br>
+
+In response to the incident, we recommend the following targeted actions to mitigate risks and reinforce our security measures:
+
+**Immediate Response Measures:** 
+  
+Workstation Isolation: Isolate the compromised workstation from the network, halting all unauthorized activity.
+  
+Credential Security: Reset the passwords for user `steve.smith` and enforce multi-factor authentication to bolster security for user accounts
+
+**Long-Term Strategies:** 
+
+System Updates: Establish a schedule for regular updates to systems and software to address security vulnerabilities.
+
+Training Programs: Roll out a comprehensive cybersecurity training program for all employees to enhance awareness, especially phishing attempts,  and prevent future incidents
+    
+**Lessons Learned:**
+
+The importance of rapid detection and response is critical to reduce the impact of such incidents
+
+Regular updates and employee training are vital in maintaining a strong security posture.
+
+Continuous improvement in response plans and security protocols is necessary to adapt to the evolving cyber threat landscape
+
+
+
+
 
   </details>
 
