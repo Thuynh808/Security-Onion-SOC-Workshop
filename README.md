@@ -485,16 +485,40 @@ By correlating timestamps, IP addresses, hostnames, and user accounts from Zeek 
 <details>
   <summary><h2><b>Section 7: Incident Reporting and Mitigation Recommendations</b></h2></summary>
 
-  <p>In this concluding section, we focus on compiling a comprehensive incident report and developing targeted mitigation recommendations. We will distill the insights and findings from our cyber threat hunting into actionable intelligence, guiding you through creating an informative and clear incident report. We'll also formulate strategic recommendations to mitigate the identified threats, enhancing our cybersecurity posture. This section is key in transforming our analysis into practical steps for response and prevention.</p>
+  <p>In the final section, we'll put together a detailed incident report and make specific suggestions to address the security issues we found. We'll use the information we've gathered from investigating the cyber threats to write a clear and useful report. Additionally, we'll offer strategies to fix the vulnerabilities we discovered, aiming to strengthen our overall security. This part is essential in turning our findings into concrete actions for fixing and preventing security problems.</p>
 
   <details>
   <summary><h3><b>Subsection 7.1: Crafting the Incident Report</b></h3></summary>
+
+  Let's use the following guideline to create our report:<br><br>
   
   - **Introduction to the Incident**: Outline the incident, including a brief description of the discovered threat.
   - **Detailed Analysis**: Present the detailed findings from the investigation, including timelines, affected systems, and nature of the threat.
-  - **Impact Assessment**: Evaluate the impact of the incident on the organization's operations and data security.
-  
-  [Further content]
+  - **Impact Assessment**: Evaluate the impact of the incident on the organization's operations and data security.<br><br>
+
+
+
+***Cybersecurity Incident Report***
+
+**Introduction to the Incident:**
+
+On January 7th, 2022, our network monitoring systems detected unusual activity from the workstation DESKTOP-GXMYNO2. This activity was indicative of a potential malware infection and involved suspicious communication with an IP address known for malicious activities.
+
+**Detailed Analysis:**
+
+Timeline: The suspicious activity began at 16:07:32 UTC and was last observed at 16:07:35 UTC on January 7th, 2022.
+
+Affected System: The user associated with the incident is steve.smith, operating on workstation DESKTOP-GXMYNO2.
+
+Nature of Threat: Preliminary findings suggest a potential malware infection leading to data exfiltration. The traffic was directed to the known malicious IP address 2.56.57.108.
+
+Method of Infection: The incident involved a deceptive tactic where a file, appearing to be a harmless image, was actually an executable file. This suggests a sophisticated method of attack, possibly through a phishing email. 
+
+Malware Identification: The evidence points towards the involvement of Arkei/Oski stealer malware, which is typically used for stealing passwords and browser data.
+
+**Impact Assessment:**
+
+Data Security: This incident raises significant concerns about the theft of passwords and web browser data, facilitated by the Arkei/Oski stealer malware. The malware's ability to access and extract user credentials and browser information presents significant risks to both our internal network security and the privacy of individual users. The implications of this breach are critical, impacting both the integrity of our organizational data systems and the security of personal user data.
 
   </details>
 
