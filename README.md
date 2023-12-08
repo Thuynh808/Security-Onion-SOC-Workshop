@@ -520,7 +520,7 @@ Malware Identification: The evidence points towards the involvement of Arkei/Osk
 
 **Impact Assessment:**
 
-Data Security: This incident raises significant concerns about the theft of passwords and web browser data, facilitated by the Arkei/Oski stealer malware. The malware's ability to access and extract user credentials and browser information presents significant risks to both our internal network security and the privacy of individual users. The implications of this breach are critical, impacting both the integrity of our organizational data systems and the security of personal user data.
+Data Security: This incident raises significant concerns about the theft of passwords and web browser data, facilitated by the Arkei/Oski stealer malware. The malware's ability to access and extract user credentials and browser information presents significant risks impacting both the integrity of our organizational data systems and the security of personal user data.
 
   </details>
 
