@@ -14,6 +14,7 @@ The objective of this project is to set up a virtual network environment for ana
 - **Security Onion VM**: A powerful Linux distro for intrusion detection, network security monitoring, and log management.
 - **Windows VM**: Utilized for conducting OSINT and other security-related tasks.
 - **Zeek (formerly Bro)**: An integral part of Security Onion, Zeek is a powerful network analysis framework focused on security monitoring.
+- **Suricata**: A network threat detection engine with real-time intrusion detection (IDS), intrusion prevention (IPS), and network security monitoring
 - **Wireshark**: Network protocol analyzer for network troubleshooting and analysis.
 - **AbuseIPDB**: Online database for reporting and checking IP addresses involved in malicious activities.
 - **VirusTotal**: A service for analyzing suspicious files and URLs for malware.
@@ -557,9 +558,7 @@ Regular updates and employee training are vital in maintaining a strong security
 
 Continuous improvement in response plans and security protocols is necessary to adapt to the evolving cyber threat landscape
 
-
-
-
+_This marks the end of our incident report_
 
   </details>
 
@@ -567,7 +566,7 @@ Continuous improvement in response plans and security protocols is necessary to 
 
 ## __Conclusion__
 
-This project successfully demonstrates the creation of a virtual SOC environment using Security Onion, Wireshark, and various OSINT tools. The hands-on experience gained in analyzing malware traffic and employing OSINT techniques provides valuable insights into the world of network security and threat intelligence.
+LET'S GO!! This project has effectively demonstrated the setup and utilization of a virtual SOC environment with Security Onion, Wireshark, and various OSINT tools. Through hands-on exercises in malware analysis and OSINT application, we've significantly deepened our understanding of network security and threat intelligence. From establishing our virtual setup to conducting detailed incident reporting, each step has honed our skills, preparing us for the complexities of the cybersecurity field.
 
 </details>
 
