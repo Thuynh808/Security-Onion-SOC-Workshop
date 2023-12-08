@@ -304,7 +304,7 @@ The objective of this project is to set up a virtual network environment for ana
 
 <details>
   <summary><h2><b>Section 6: The HUNT</b></h2></summary>
-
+  <p>In this section, we navigate the intricate process of cyber threat hunting, from identifying initial alerts to in-depth analysis. We'll explore network activities, evaluate IP reputations, and investigate potential data breaches, using advanced tools for a comprehensive cyber threat investigation.</p>
   <details>
   <summary><h3><b>Subsection 6.1: Initiating The Hunt</b></h3></summary>
   
