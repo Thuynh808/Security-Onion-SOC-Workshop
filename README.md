@@ -442,21 +442,43 @@ The discovery of `5861695120.zip` in the network traffic, especially containing 
 
   </details>
 
-
-
-
-
+  <details>
+  <summary><h3><b>Subsection 6.4: Compiling Comprehensive Incident Details for Reporting</b></h3></summary>
     
+  A thorough incident report requires a detailed analysis of the event timeline and involved hosts. This subsection focuses on piecing together information from Security Onion's Zeek logs to establish a timeline and identify the host machine affected in the incident. <br><br>
 
+  - **Establish the Incident Timeline**:
+    - By analyzing the timestamps of events, we define the active period of the incident. This step is crucial for understanding when the suspicious activities, such as HTTP POST requests and potential data exfiltration, began and ended.
+      
+    ![Event Timestamps](https://i.imgur.com/dEVJgsX.png)
+<br><br>
+    ![Event Timestamps2](https://i.imgur.com/7WHmpDJ.png)
+<br><br>
 
+  - **Zeek Log Analysis**:
+    -  Zeek generates a multitude of logs, each offering insights into different aspects of network activity. By accessing these logs, we can extract valuable data points that may not be apparent from initial alerts.<br><br>
+    -  Scroll up and Click on `Zeek` and choose `Only`
+    -  We see numerous logs for zeek and notice there's a log for Kerberos which deals with authentications
+    -  This could help us identify our affected host and give us a better scope of the incident
+           
+    ![Zeek Query](https://i.imgur.com/51UGSAZ.png)
+<br><br>
+    ![Kerberos](https://i.imgur.com/krCeIUm.png)
+<br><br>
 
+  - **Host Machine Identification**:
+    - As we scroll down, we can see a possible hostname and username
+    - Expand the alert to get more details
+    - After analyzing the details, we can see the source IP of `192.168.1.216` and username `steve.smith`
+      
+    ![Zeek Kerberos Logs](https://i.imgur.com/Y6A60u5.png)
+<br><br>
+    ![Kerberos Authentication Details](https://i.imgur.com/U8J3D28.png)
+<br><br>
 
+By correlating timestamps, IP addresses, hostnames, and user accounts from Zeek logs with the alerts and traffic captured, we can construct a comprehensive timeline and narrative of the incident. Compiling this information is pivotal in constructing an accurate and detailed report to understand the full extent of the incident and to guide the response team in implementing effective countermeasures.
 
-
-
-
-
-
+  </details>
 
 </details>
 
