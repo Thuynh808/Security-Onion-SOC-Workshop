@@ -405,6 +405,47 @@ The objective of this project is to set up a virtual network environment for ana
 
   </details>
 
+  <details>
+  <summary><h3><b>Subsection 6.3: Analyzing the PCAP in Wireshark</b></h3></summary>
+    
+  This subsection is dedicated to the analysis of the pcap file using Wireshark. We focus on the suspicious HTTP POST requests captured, specifically those involving unusual file types, which may indicate data exfiltration or malware activity. <br><br>
+
+  - **Step 1: Inspect HTTP POST Requests**:
+    - Load the pcap file into Wireshark and apply the filter to identify HTTP POST requests:<br><br>
+      ```plaintext
+      http.request.method == POST
+      ```
+    - Among the captured POST requests, the presence of a `.zip` file upload is notable. Unlike the typical `.jpeg` images, this file format could be used for data exfiltration or as a malware vector.<br><br>
+      
+    ![Inspect HTTP POST Requests](https://i.imgur.com/kaZXyb4.png)
+<br><br>
+
+  - **Step 2: Follow TCP Stream**:
+    - Right-click on the packet associated with the `.zip` file POST request and select `Follow` > `TCP Stream`<br><br>
+    - Investigating the TCP stream allows us to dissect the session and inspect the headers and payload for potential data exfiltration signs
+
+    ![Follow TCP Stream](https://i.imgur.com/XfdGAHx.png)
+<br><br>
+
+  - **Step 3: Analyze File Contents and Names**:
+    - A closer examination of the TCP stream reveals the filename `5861695120.zip`, raising concerns about data leaving the network<br><br>
+    - Scrolling through the stream, we find concerning artifacts within the `.zip` file:
+      - A file named `passwords.txt`, which implies a severe data breach
+      - Several text files that appear to contain browser cookies, indicating targeted data extraction
+
+    ![Analyze File Contents and Names1](https://i.imgur.com/Gk5bkdO.png)
+<br><br>
+    ![Analyze File Contents and Names2](https://i.imgur.com/ku10JfR.png)
+<br><br>
+
+The discovery of `5861695120.zip` in the network traffic, especially containing `passwords.txt`, is a critical security finding. The Wireshark analysis points to a potential data breach, with sensitive information likely being exfiltrated. Immediate steps are vital to mitigate the impact of this incident.
+
+  </details>
+
+
+
+
+
     
 
 
