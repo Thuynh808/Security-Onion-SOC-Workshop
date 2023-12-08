@@ -457,8 +457,8 @@ The discovery of `5861695120.zip` in the network traffic, especially containing 
 
   - **Zeek Log Analysis**:
     -  Zeek generates a multitude of logs, each offering insights into different aspects of network activity. By accessing these logs, we can extract valuable data points that may not be apparent from initial alerts.<br><br>
-    -  Scroll up and Click on `Zeek` and choose `Only`
-    -  We see numerous logs for zeek and notice there's a log for Kerberos which deals with authentications
+    -  Scroll up and Click on `Zeek` and choose `Only`<br><br>
+    -  We see numerous logs for zeek and notice there's a log for Kerberos which deals with authentications<br><br>
     -  This could help us identify our affected host and give us a better scope of the incident
            
     ![Zeek Query](https://i.imgur.com/51UGSAZ.png)
@@ -467,8 +467,8 @@ The discovery of `5861695120.zip` in the network traffic, especially containing 
 <br><br>
 
   - **Host Machine Identification**:
-    - As we scroll down, we can see a possible hostname and username
-    - Expand the alert to get more details
+    - As we scroll down, we can see a possible hostname and username<br><br>
+    - Expand the alert to get more details<br><br>
     - After analyzing the details, we can see the source IP of `192.168.1.216` and username `steve.smith`
       
     ![Zeek Kerberos Logs](https://i.imgur.com/Y6A60u5.png)
