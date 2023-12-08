@@ -1,4 +1,4 @@
-<!--
+
 # Security-Onion-SOC-Workshop
 <br>
 
@@ -572,5 +572,5 @@ LET'S GO!! This project has effectively demonstrated the setup and utilization o
 </details>
 
 
--->
+
 
