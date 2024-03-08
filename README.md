@@ -23,7 +23,7 @@ The objective of this project is to set up a virtual network environment for ana
 - **Malware Traffic Analysis PCAP File**: Used for practical experience in analyzing malicious network traffic.
 
 <details>
-  <summary><h2><b>Section 1: Setting Up the Virtual Environment</b></h2></summary>
+  <summary><h3><b>Section 1: Setting Up the Virtual Environment</b></h3></summary>
   This section will guide us through the setup of our virtual environment using VirtualBox. We'll configure a NAT network and install two virtual machines – one for Security Onion and another for a Windows environment to facilitate OSINT and to access the Security Onion web interface. <br><br>
 
   - **Step 1: Download Security Onion ISO File**:  
