@@ -154,9 +154,9 @@ The objective of this project is to set up a virtual network environment for ana
 
   - **Step 1: Confirm Security Onion Services**:
     - Within our Security Onion VM, it’s important to first ensure that all necessary services are operational. Run the following command to see if the services are up and running. This step confirms that the system is ready for use.<br><br>
-    ```bash
-    sudo so-status
-    ```
+      ```bash
+      sudo so-status
+      ```
 <br>
  
   ![Image 2](https://i.imgur.com/nYKCBlT.png)
@@ -239,27 +239,27 @@ The objective of this project is to set up a virtual network environment for ana
   - **Step 4: Download the PCAP File Using Wget in PowerShell**:
     - Switch back to the PowerShell SSH session connected to Security Onion.
     - Use the `wget` command and paste the copied link address to download the file<br><br>
-      - ```bash
-        wget https://www.malware-traffic-analysis.net/2022/01/07/2022-01-07-traffic-analysis-exercise.pcap.zip
-        ```
+      ```bash
+      wget https://www.malware-traffic-analysis.net/2022/01/07/2022-01-07-traffic-analysis-exercise.pcap.zip
+      ```
     ![Image 2](https://i.imgur.com/BSsooKQ.png)
 <br><br>
     
   - **Step 5: Unzip the PCAP File**:
     - The zipped pcap file requires a password to unzip. The password is: infected
     - Use the following command to unzip the pcap file:<br><br>
-      - ```bash
-        unzip 2022-01-07-traffic-analysis-exercise.pcap.zip
-        ```
+      ```bash
+      unzip 2022-01-07-traffic-analysis-exercise.pcap.zip
+      ```
     ![Image 2](https://i.imgur.com/ME0M40y.png)
 <br><br>
 
   - **Step 6: Import the PCAP into Security Onion**:  
     - Now, we'll import the pcap file into Security Onion for analysis.
     - The following command will import the pcap:<br><br>
-      - ```bash
-        sudo so-import-pcap 2022-01-07-traffic-analysis-exercise.pcap
-        ```
+      ```bash
+      sudo so-import-pcap 2022-01-07-traffic-analysis-exercise.pcap
+      ```
     ![Image 2](https://i.imgur.com/C0BuQrR.png)
 <br><br>
 
