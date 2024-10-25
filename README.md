@@ -154,9 +154,9 @@ The objective of this project is to set up a virtual network environment for ana
 
   - **Step 1: Confirm Security Onion Services**:
     - Within our Security Onion VM, it’s important to first ensure that all necessary services are operational. Run the following command to see if the services are up and running. This step confirms that the system is ready for use.<br><br>
-      - ```bash
-        sudo so-status
-        ```
+    ```bash
+    sudo so-status
+    ```
 <br>
  
   ![Image 2](https://i.imgur.com/nYKCBlT.png)
