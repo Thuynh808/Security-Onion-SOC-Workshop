@@ -197,9 +197,9 @@ The objective of this project is to set up a virtual network environment for ana
   - **Step 1: SSH into Security Onion from Windows VM**:  
     - Start by opening a PowerShell window in the Windows VM.
     - Use SSH to connect to the Security Onion VM with our username and password<br><br>
-      - ```bash
-        ssh streetrack@10.2.22.20
-        ```
+      ```bash
+      ssh streetrack@10.2.22.20
+      ```
         
   ![Image 2](https://i.imgur.com/4QauvKf.png)
 <br><br>
@@ -208,15 +208,15 @@ The objective of this project is to set up a virtual network environment for ana
     - Once logged in, we'll run 'ls' to take note of where we're at
     - Create a temporary directory(temp) where the pcap file will be downloaded.
     - Navigate into our temp directory<br><br>
-      - ```bash
-        ls
-        ```
-      - ```bash
-        mkdir temp
-        ```
-      - ```bash
-        cd temp
-        ```
+      ```bash
+      ls
+      ```
+      ```bash
+      mkdir temp
+      ```
+      ```bash
+      cd temp
+      ```
         
     ![Image 2](https://i.imgur.com/7BdYAmv.png)
 <br><br>
